@@ -1,0 +1,149 @@
+body{
+    background-color: rgb(195, 195, 195);
+}
+
+*{
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(27, 26, 25);
+                
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(27, 26, 25);
+}
+
+
+#app-layout{
+    height: 800px;
+}
+
+/*===========================================*/
+/* USER LIST */
+
+
+#usr-list{
+    min-height: 375px;
+    background-color: gainsboro;
+    border:black 1px solid;
+    border-radius: 2px;
+    margin: 4px;
+    padding:4px;
+    width:66%;
+}
+#usr-list > h2 {
+    margin-left:22px;
+}
+#usr-list > table#user{
+    width: 75%;
+    margin-left:22px;
+    margin-bottom:10px;
+    text-align: left;
+}
+
+
+/* TABLE HEADER*/
+
+
+#user > tbody:nth-child(1) > tr:first-child{
+    background-color: azure;
+    font-size: 18px;   
+}
+
+
+#user > tbody:nth-child(1) > tr:first-child th{
+    font-weight: lighter;
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+#user > tbody:nth-child(1) > tr:not(:first-child){
+    background-color: rgb(204, 204, 204);
+    line-height:15px;
+}
+#user > tbody:nth-child(1) tr *
+{
+    
+    padding-left: 5px;
+    min-width:210px;
+    max-width:210px;
+}
+
+#user > tbody:nth-child(1) tr td > p{
+  
+    overflow-x:auto;
+    scrollbar-width: thin;
+}
+
+
+
+/*===================================================*/
+
+/* PAGINATION */
+
+div.list-pag{
+    display:flex;
+    width: 33%;
+    text-align: center;
+}
+div.list-pag > nav {
+    margin-left:1%;
+    background-color: #ddd;
+    border: #828282 1px solid;
+    border-radius: 2%;
+    width: 50%;
+}
+div.list-pag svg{
+    width:28px;
+}
+/*===================================*/
+
+div.list-pag > nav > div:first-child{
+display:none;
+}
+/* Showing results*/
+div.list-pag > nav > div:nth-child(2) > div:first-child{
+    position: relative;
+    top: 40px;
+}
+
+
+
+
+/* Pagination */
+div.list-pag > nav > div:nth-child(2) > div:nth-child(2){
+    position: relative;
+    bottom: 40px;
+}
+div.list-pag > nav > div:nth-child(2) > div:nth-child(2) >span{
+
+}
+ /*pagination spans arrows */
+
+ div.list-pag > nav > div:nth-child(2) > div:nth-child(2) >span a svg{
+     font-size: 26px;
+     opacity:100%;
+ }
+ div.list-pag > nav > div:nth-child(2) > div:nth-child(2) >span span span svg
+{
+    font-size: 26px;
+    opacity:40%;
+}
+ /* current page */
+ div.list-pag > nav > div:nth-child(2) > div:nth-child(2) >span span span{
+    font-weight: bold; 
+    font-size:24px;
+ }
+ /* pagination as */
+ div.list-pag > nav > div:nth-child(2) > div:nth-child(2) >span a {
+    font-size: 22px;
+ 
+
+
+}
+
+/* Pagination select input*/
+div.list-pag >  div.pagination-select{
+    margin-top:auto;
+    padding-bottom:6px;
+}
